@@ -89,16 +89,16 @@
     <arg name="use_sim"                           value="$(arg use_sim)"/>
   </include>
 
-  <include if="$(arg use_nav)" file="$(find interbotix_xslocobot_nav)/launch/xslocobot_nav.launch">
+  <include if="$(arg use_nav)" file="$(find interbotix_xslocobot_nav)/launch/gslam_nav.launch">
     <arg name="robot_model"                       value="$(arg robot_model)"/>
     <arg name="robot_name"                        value="$(arg robot_name)"/>
     <arg name="use_lidar"                         value="$(arg use_lidar)"/>
-    <arg name="localization"                      value="$(arg localization)"/>
+   <!--  <arg name="localization"                      value="$(arg localization)"/>
     <arg name="rtabmap_args"                      value="$(arg rtabmap_args)"/>
     <arg name="use_rtabmapviz"                    value="$(arg use_rtabmapviz)"/>
     <arg name="rtabmapviz_args"                   value="$(arg rtabmapviz_args)"/>
     <arg name="database_path"                     value="$(arg database_path)"/>
-    <arg name="camera_tilt_angle"                 value="$(arg camera_tilt_angle)"/>
+    <arg name="camera_tilt_angle"                 value="$(arg camera_tilt_angle)"/> --> 
     <arg name="launch_driver"                     value="false"/>
   </include>
 
