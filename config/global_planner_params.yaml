@@ -1,0 +1,11 @@
+GlobalPlanner:
+#All added by MB
+  allow_unknown: false
+  use_quadratic: false
+  use_dijkstra: true
+  use_grid_path: false
+  visualize_potential: true
+  default_tolerance: 0.3
+  cost_factor: 0.70
+  neutral_cost: 66
+  lethal_cost: 253
